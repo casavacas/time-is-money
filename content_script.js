@@ -6,9 +6,10 @@ document.getElementById("submit").addEventListener("click", function(){
 	var wage = parseInt(str);
 	console.log(wage);
 
-
-
+	console.log("hello again");
+	var searchedText = 'wage';
 	$(function() {
+		console.log("hello again2");
 		var foundin = $('div:contains("'+searchedText+'")');
 		foundin.each( function( i, element){
 			console.log(i);
@@ -21,7 +22,6 @@ document.getElementById("submit").addEventListener("click", function(){
 			console.log(str.indexOf('.') - str.indexOf('$'));
 			if (str.indexOf('$') >= 0 && str.indexOf('.') >= 0){
 				var i = str.indexOf('.') - str.indexOf('$');
-				console.log('-------');
 				console.log(i);
 				if (i < 10 && i >=1){
 					console.log(true);
@@ -39,5 +39,5 @@ document.getElementById("submit").addEventListener("click", function(){
 			}
 		});
 	});
-	
+
 });

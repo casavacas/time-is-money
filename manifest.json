@@ -12,13 +12,12 @@
     "activeTab",
     "https://ajax.googleapis.com/"
   ],
-  "background":{
-    "scripts":["jquery-2.2.0.min.js"]
-  },
+
   "content_scripts": [
     {
-      "js": ["content.js"], 
+      "matches": ["<all_urls>"],
+      "js": ["jquery-2.2.0.min.js", "content_script.js" ], 
       "persistent": false
     }
-  ],
+  ]
 }

@@ -9,13 +9,13 @@ $(function() {
 		//console.log("print 3");
 		var foundin = $('div:contains("'+searchedText+'")');
 		foundin.each( function( i, element){
-			//console.log(i);
-			//console.log(element.);
+			console.log(i);
+			console.log(element);
 			var str = $(this)[0].innerHTML;
 			//console.log(str);
-			//console.log(str.indexOf('$'));
-			//console.log(str.indexOf('.'));
-			//console.log(str.indexOf('.') - str.indexOf('$'));
+			console.log(str.indexOf('$'));
+			console.log(str.indexOf('.'));
+			console.log(str.indexOf('.') - str.indexOf('$'));
 			var str1 = '';
 			var x = 0;
 			//console.log(x);
@@ -32,16 +32,16 @@ $(function() {
 					//console.log(dec);	
 					var d = parseInt(dec);
 					var ans = a+d/100;
-					//console.log (ans);
-					//console.log( Math.round(ans/wage*100)/100.0);
-					//console.log("hours");
+					// console.log (ans);
+					// console.log( Math.round(ans/wage*100)/100.0);
+					console.log("hours");
 					var hours =  Math.round(ans/wage*100)/100.0;
 					str1 	+= str.substring(0, str.indexOf('$')) + hours ;
 					str1 	+= ' hours';
-					//console.log(str1);
+					console.log(str1);
 					$(this).html(str1);
 					str =  str.substring(str.indexOf('.')+3, str.length);
-					//console.log(str);
+					console.log(str);
 				}x++;
 			}
 			if (str.indexOf('$') >= 0 && str.indexOf('.') >= 0){

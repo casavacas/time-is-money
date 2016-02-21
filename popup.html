@@ -1,11 +1,22 @@
 <!DOCTYPE HTML>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    </head>
 <BODY>
-<div>wage</div>
-	<form id="inputForm" >
-		Enter an hourly wage: <input type="text" id="wage"  ><br>
+    <h1>Time is Money</h1>
+	<form id="inputForm" class="in-form">
+		<p>Enter an hourly wage:</p>
+        <div><img src="dollar.png" class="dollar-sign"><input class="tbox" type="text" id="wage" ></div>
+            <br>
 		
 	</form>
-	<button type="button" id="submit">Submit</button>
+	<button type="button" id="submit" class="in-form">Submit</button>
+    
+    <p>All monetary values on screen, denoted by $
+    <br>will be translated into hours worked</p>
+    
 	<script src = "jquery-2.2.0.min.js"></script>
 
 	<script src = "background.js"></script>
